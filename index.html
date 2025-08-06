@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hdmain</title>
+    <meta name="description" content="Cześć! Jestem Maksymilian, backend developer z Polski. Kocham Java, Golang i Python.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Hero Section -->
+        <!-- Hero/Bio Section -->
+    <section class="bio-hero">
+        <div class="container">
+            <div class="bio-content">
+                <div class="bio-avatar">
+                    <div class="avatar-circle">
+                        <span class="avatar-emoji">🧑‍💻</span>
+                    </div>
+                </div>
+                <h1 class="bio-name">hdmain</h1>
+                <p class="bio-title">Backend Developer</p>
+                <p class="bio-description">
+                    Cześć! 👋 Jestem backend developer z Polski. Kocham tworzyć rzeczy w <strong>Java</strong>, 
+                    <strong>Golang</strong> i <strong>Python</strong>. Czasami piszę o programowaniu, 
+                    czasami gram w gry, ale głównie robię API i serwery. ☕
+                </p>
+                
+                <div class="bio-interests">
+                    <span class="interest-tag">☕ Java</span>
+                    <span class="interest-tag">🐹 Golang</span>
+                    <span class="interest-tag">🐍 Python</span>
+                    <span class="interest-tag">🚀 APIs</span>
+                    <span class="interest-tag">🎮 Gaming</span>
+                    <span class="interest-tag">🌮 Food</span>
+                </div>
+
+                <div class="bio-links">
+                    <a href="mailto:makss@example.com" class="bio-link">
+                        <span class="link-icon">📧</span>
+                        <span class="link-text">Email</span>
+                    </a>
+                    <a href="https://github.com/makss" target="_blank" class="bio-link">
+                        <span class="link-icon">�</span>
+                        <span class="link-text">GitHub</span>
+                    </a>
+                    <a href="https://t.me/makss_dev" target="_blank" class="bio-link">
+                        <span class="link-icon">�</span>
+                        <span class="link-text">Telegram</span>
+                    </a>
+                </div>
+
+                <div class="bio-fun-fact">
+                    <p id="fun-fact-text">💡 <em>Fun fact:</em> <span id="fun-fact-content">Mój kod kompiluje się za pierwszym razem w 73% przypadków</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Panel (hidden by default) -->
+    <div id="admin-panel" class="admin-panel hidden">
+        <div class="admin-content">
+            <h3>Panel Administracyjny</h3>
+            <div class="admin-field">
+                <label for="fun-fact-input">Fun Fact:</label>
+                <textarea id="fun-fact-input" rows="3" placeholder="Wpisz nowy fun fact..."></textarea>
+            </div>
+            <div class="admin-buttons">
+                <button id="save-changes" class="admin-btn save">Zapisz</button>
+                <button id="cancel-changes" class="admin-btn cancel">Anuluj</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Toggle Button (hidden by default) -->
+    <button id="admin-toggle" class="admin-toggle hidden">⚙️</button>
+
+    <!-- Footer -->
+    <footer class="simple-footer">
+        <div class="container">
+            <p>made with ☕ by best skid</p>
+            <p id="request-counter" class="request-counter">total requests: 0</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
